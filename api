@@ -1,0 +1,66 @@
+commentController@store
+post                                        /comment
+productId:1
+text:something
+
+commentController@index
+get                                         /comment
+get                                         /comment?productId=1
+get                                         /comment?userId=1
+get                                         /comment?productId=1&userId=1
+
+commentController@show
+get                                         /comment/1
+
+commentController@destroy
+delete                                      /comment/1
+
+commentController@update
+patch                                       /comment/1
+
+======================================================================================
+
+verifiedComment@store
+post                                        /verified-comment
+id:1,
+note:something
+
+verifiedComment@index
+get                                         /verified-comment
+get                                         /verified-comment?productId=1
+get                                         /verified-comment?userId=1
+get                                         /verified-comment?productId=1&userId=1
+
+verifiedComment@show
+get                                         /verified-comment/1
+
+verifiedComment@destroy
+delete                                      /verified-comment/1
+
+verifiedComment@update
+patch                                       /verified-comment/1
+note:something1
+
+======================================================================================
+
+rejectedComment@store
+post                                        /rejected-comment
+id:1,
+reason:something
+
+rejectedComment@index
+get                                         /rejected-comment
+get                                         /rejected-comment?productId=1
+get                                         /rejected-comment?userId=1
+get                                         /rejected-comment?productId=1&userId=1
+
+rejectedComment@show
+get                                         /rejected-comment/1
+
+rejectedComment@destroy
+delete                                      /rejected-comment/1
+
+rejectedComment@update
+patch                                       /rejected-comment/1
+reason:something1
+
