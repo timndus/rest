@@ -1,12 +1,7 @@
 # API Routes Documentation
 
-This document provides an overview of the API routes and endpoints for managing comments, verified comments, and rejected comments.
 
-## About This Document
-
-This markdown file serves as a reference guide for developers working with the API. It outlines the available routes, HTTP methods, and parameters for each route. The document is structured into sections based on the different controllers responsible for handling the requests.
-
-Each section includes the following details for each route:
+This document provides an overview of the API routes and endpoints for managing comments, verified comments, and rejected comments. It serves as a reference guide for developers working with the API, outlining the available routes, HTTP methods, and parameters for each route. The document is structured into sections based on the different controllers responsible for handling the requests.
 
 - **HTTP Method**: The HTTP method used to interact with the route (e.g., GET, POST, PATCH, DELETE).
 - **Route**: The URL path for accessing the route.
@@ -39,25 +34,25 @@ Each section includes the following details for each route:
 
 # Verified Comment Routes
 
-## verifiedComment@store
+## verifiedCommentController@store
 - **POST**: `/verified-comment`
 - Parameters:
   - `id: 1`
   - `note: something`
 
-## verifiedComment@index
+## verifiedCommentController@index
 - **GET**: `/verified-comment`
 - **GET**: `/verified-comment?productId=1`
 - **GET**: `/verified-comment?userId=1`
 - **GET**: `/verified-comment?productId=1&userId=1`
 
-## verifiedComment@show
+## verifiedCommentController@show
 - **GET**: `/verified-comment/1`
 
-## verifiedComment@destroy
+## verifiedCommentController@destroy
 - **DELETE**: `/verified-comment/1`
 
-## verifiedComment@update
+## verifiedCommentController@update
 - **PATCH**: `/verified-comment/1`
 - Parameters:
   - `note: something1`
@@ -66,25 +61,25 @@ Each section includes the following details for each route:
 
 # Rejected Comment Routes
 
-## rejectedComment@store
+## rejectedCommentController@store
 - **POST**: `/rejected-comment`
 - Parameters:
   - `id: 1`
   - `reason: something`
 
-## rejectedComment@index
+## rejectedCommentController@index
 - **GET**: `/rejected-comment`
 - **GET**: `/rejected-comment?productId=1`
 - **GET**: `/rejected-comment?userId=1`
 - **GET**: `/rejected-comment?productId=1&userId=1`
 
-## rejectedComment@show
+## rejectedCommentController@show
 - **GET**: `/rejected-comment/1`
 
-## rejectedComment@destroy
+## rejectedCommentController@destroy
 - **DELETE**: `/rejected-comment/1`
 
-## rejectedComment@update
+## rejectedCommentController@update
 - **PATCH**: `/rejected-comment/1`
 - Parameters:
   - `reason: something1`
