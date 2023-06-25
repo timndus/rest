@@ -1,3 +1,17 @@
+# API Routes Documentation
+
+This document provides an overview of the API routes and endpoints for managing comments, verified comments, and rejected comments.
+
+## About This Document
+
+This markdown file serves as a reference guide for developers working with the API. It outlines the available routes, HTTP methods, and parameters for each route. The document is structured into sections based on the different controllers responsible for handling the requests.
+
+Each section includes the following details for each route:
+
+- **HTTP Method**: The HTTP method used to interact with the route (e.g., GET, POST, PATCH, DELETE).
+- **Route**: The URL path for accessing the route.
+- **Parameters**: The parameters required or optional for the specific route.
+
 # Comment Routes
 
 ## commentController@store
